@@ -6,6 +6,7 @@ import kotlin.math.sqrt
 
 /**
  * 判断素数/质数(只能被1和其自身整除)
+ *
  * @author DawnStar
  * @since : 2024/4/8
  */
@@ -16,13 +17,13 @@ class PrimeNumber {
             // let 写法
             it.let {
                 val sqrt = sqrt(it.toDouble()).toInt()
-                var flag = false
-                for (i in 2..sqrt) {
+                var flag = true
+                for (i in sqrt downTo 2) {
                     if (it == 2) {
                         continue
                     }
                     if (it.rem(i) == 0) {
-                        flag = true
+                        flag = false
                         break
                     }
                 }
@@ -38,13 +39,13 @@ class PrimeNumber {
             // run 写法
             it.run {
                 val sqrt = sqrt(this.toDouble()).toInt()
-                var flag = false
-                for (i in 2..sqrt) {
+                var flag = true
+                for (i in sqrt downTo 2) {
                     if (this == 2) {
                         continue
                     }
                     if (this.rem(i) == 0) {
-                        flag = true
+                        flag = false
                         break
                     }
                 }
@@ -89,10 +90,11 @@ fun main() {
     val right = scanner.nextInt()
     val primeNumber = PrimeNumber()
     println("let写法")
-    val primeNumbers = primeNumber.filterPrimeNumberLet(left, right)
-    println(primeNumbers.toString())
+    val primeNumberLet = primeNumber.filterPrimeNumberLet(left, right)
+    println("${left}-${right}共有：${primeNumberLet.size}个素数\n$primeNumberLet")
 
     println("run写法")
     val primeNumbersRun = primeNumber.filterPrimeNumberRun(left, right)
-    println(primeNumbersRun.toString())
+    println("${left}-${right}共有：${primeNumbersRun.size}个素数\n$primeNumbersRun")
+
 }
