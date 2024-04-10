@@ -47,3 +47,24 @@
 > 60-89分之间的用B表示，60分以下的用C表示<br>
 > 题解：使用when关键字解题<br/>
 > [GradeShow](./src/main/kotlin/com/silvergravel/basic/GradeShow.kt)
+
+---
+
+> 7.题目：输入两个正整数m和n，求其最大公约数和最小公倍数<br/>
+> 题解：利用辗除法 [欧几里得算法](https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/1647675)<br/>
+> [CommonDivisorMultiple](./src/main/kotlin/com/silvergravel/basic/CommonDivisorMultiple.kt)
+
+---
+
+> 8.输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数<br/>
+> 题解：使用正则表达式<br/>
+> [StatisticalCharacters](./src/main/kotlin/com/silvergravel/basic/StatisticalCharacters.kt)
+
+---
+
+> 9.题目：求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。
+> 例如2+22+222+2222+22222(此时共有5个数相加)，几个数相加有键盘控制。<br/>
+> 题解：循环计算每一项的值<br/>
+> [SameNumberItem](./src/main/kotlin/com/silvergravel/basic/SameNumberItem.kt)
+
+ 
