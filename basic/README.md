@@ -67,4 +67,22 @@
 > 题解：循环计算每一项的值<br/>
 > [SameNumberItem](./src/main/kotlin/com/silvergravel/basic/SameNumberItem.kt)
 
- 
+---
+
+> 10.题目：一个数如果恰好等于它的因子之和，这个数就称为"完数"。
+> 例如6=1＋2＋3.编程找出1000以内的所有完数<br/>
+> 题解：平方这个数得到平方根，然后从2循环至平方根 得到两个因子，最后汇总相加<br/>
+> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/PerfectNumber.kt)
+
+---
+
+> 11.题目：一个球从一定高度自由落下，每次落地后反跳回原高度的一半；
+> 再落下，求它在 第N次落地时，共经过多少米？第N次反弹多高<br/>
+> 题解：每一次落地弹起都是该高度的3/2<br/>
+> [BallFalling](./src/main/kotlin/com/silvergravel/basic/BallFalling.kt)
+
+---
+
+> 12.题目：有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
+> 题解：三层循环，相同的数字跳过当前循环<br>
+> [DifferentNotRepeatNumber](./src/main/kotlin/com/silvergravel/basic/DifferentNotRepeatNumber.kt)
