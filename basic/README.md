@@ -86,3 +86,24 @@
 > 12.题目：有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 > 题解：三层循环，相同的数字跳过当前循环<br>
 > [DifferentNotRepeatNumber](./src/main/kotlin/com/silvergravel/basic/DifferentNotRepeatNumber.kt)
+
+---
+
+> 13.题目：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？</br>
+题解：指定上界，在上界内判断这个数<br/>
+> [PerfectSquare](./src/main/kotlin/com/silvergravel/basic/PerfectSquare.kt)
+
+---
+
+> 14.题目：输入某年某月某日，判断这一天是这一年的第几天？<br/>
+> 题解：处理闰年多一天的情况，创建一个每月的天数数组<br/>
+> [DetermineNumberDay](./src/main/kotlin/com/silvergravel/basic/DetermineNumberDay.kt)
+
+---
+ 
+> 15.题目：输入三个整数x,y,z，请把这三个数由小到大输出<br/>
+> 题解：使用also两两交换变量<br/>
+> [ThreeNumberSort](./src/main/kotlin/com/silvergravel/basic/ThreeNumberSort.kt)
+
+---
+
