@@ -83,7 +83,7 @@ class PrimeNumber {
 fun main() {
     // in 是 kotlin中的硬关键字
     val scanner = Scanner(System.`in`)
-    print("输入左边界；")
+    print("输入左边界：")
     val left = scanner.nextInt()
 
     print("输入右边界：")

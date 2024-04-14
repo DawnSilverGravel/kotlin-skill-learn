@@ -90,7 +90,7 @@
 ---
 
 > 13.题目：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？</br>
-题解：指定上界，在上界内判断这个数<br/>
+> 题解：指定上界，在上界内判断这个数<br/>
 > [PerfectSquare](./src/main/kotlin/com/silvergravel/basic/PerfectSquare.kt)
 
 ---
@@ -100,10 +100,34 @@
 > [DetermineNumberDay](./src/main/kotlin/com/silvergravel/basic/DetermineNumberDay.kt)
 
 ---
- 
+
 > 15.题目：输入三个整数x,y,z，请把这三个数由小到大输出<br/>
 > 题解：使用also两两交换变量<br/>
 > [ThreeNumberSort](./src/main/kotlin/com/silvergravel/basic/ThreeNumberSort.kt)
 
 ---
 
+> 16.题目：输出乘法口诀<br/>
+> 题解：使用双层for循环<br/>
+> [MultiplicationMnemonic](./src/main/kotlin/com/silvergravel/basic/MultiplicationMnemonic.kt)
+
+---
+
+> 17.题目：猴子吃桃问题：猴子第一天摘下若干个桃子，当即吃了一半，还不瘾，又多吃了一个
+> 第二天早上又将剩下的桃子吃掉一半，又多吃了一个。以后每天早上都吃了前一天剩下的一半零一个。
+> 到第10天早上想再吃时，见只剩下一个桃子了。求第一天共摘了多少。<br/>
+> 题解：使用逆向思维，从第10天开始<br/>
+> [MonkeyEatPeach](./src/main/kotlin/com/silvergravel/basic/MonkeyEatPeach.kt)
+
+---
+
+> 18.题目：打印出如下图案（菱形）<br/>
+> `*`<br/>
+`***`<br/>
+`******`<br/>
+`********`<br/>
+`******`<br/>
+`***`<br/>
+`*`<br/>
+> 题解：上半部分使用顺序for循环，下半部分使用逆循环<br/>
+> [Diamond](./src/main/kotlin/com/silvergravel/basic/Diamond.kt)

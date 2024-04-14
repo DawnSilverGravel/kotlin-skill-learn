@@ -33,13 +33,12 @@ class FibonacciSequence {
             }
         }
         var text = ""
-        for (row in rows downTo 0) {
+        for (row in 0 until rows) {
             for (index in 0..(rows - row)) {
                 text += " "
             }
             for (i in 0..row) {
                 text += "${arrays[row][i]} "
-
             }
             text += "\n"
 
