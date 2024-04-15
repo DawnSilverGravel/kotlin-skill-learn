@@ -131,3 +131,21 @@
 `*`<br/>
 > 题解：上半部分使用顺序for循环，下半部分使用逆循环<br/>
 > [Diamond](./src/main/kotlin/com/silvergravel/basic/Diamond.kt)
+ 
+---
+
+> 19.题目：有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和<br/>
+> 题解：下一个分子为上个分子与分母之和，下个分母为上个分子的值<br/>
+> [FractionSum](./src/main/kotlin/com/silvergravel/basic/FractionSum.kt) 
+
+---
+
+> 20.题目：求1+2!+3!+...+20!的和<br/>
+> 题解：分别求出每个数的阶乘再求和<br/>
+[FactorialSum](./src/main/kotlin/com/silvergravel/basic/FactorialSum.kt)
+
+---
+
+> 21.题目：利用递归方法求5!<br/>
+> 题解：构建递归方法求和<br/>
+[FactorialRecursive](./src/main/kotlin/com/silvergravel/basic/FactorialRecursive.kt)
