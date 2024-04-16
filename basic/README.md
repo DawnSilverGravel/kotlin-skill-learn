@@ -51,7 +51,8 @@
 ---
 
 > 7.题目：输入两个正整数m和n，求其最大公约数和最小公倍数<br/>
-> 题解：利用辗除法 [欧几里得算法](https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/1647675)<br/>
+>
+题解：利用辗除法 [欧几里得算法](https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/1647675)<br/>
 > [CommonDivisorMultiple](./src/main/kotlin/com/silvergravel/basic/CommonDivisorMultiple.kt)
 
 ---
@@ -136,7 +137,7 @@
 
 > 19.题目：有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和<br/>
 > 题解：下一个分子为上个分子与分母之和，下个分母为上个分子的值<br/>
-> [FractionSum](./src/main/kotlin/com/silvergravel/basic/FractionSum.kt) 
+> [FractionSum](./src/main/kotlin/com/silvergravel/basic/FractionSum.kt)
 
 ---
 
@@ -149,3 +150,25 @@
 > 21.题目：利用递归方法求5!<br/>
 > 题解：构建递归方法求和<br/>
 [FactorialRecursive](./src/main/kotlin/com/silvergravel/basic/FactorialRecursive.kt)
+ 
+---
+
+> 22.题目：有5个人坐在一起，问第五个人多少岁？他说比第4个人大2岁。
+> 问第4个人岁数，他说比第3个人大2岁。问第三个人，又说比第2人大两岁。
+> 问第2个人，说比第一个人大两岁。最后问第一个人，他说是10岁。
+> 请问第五个人多大<br/>
+> 题解：使用递归法或直接乘法<br/>
+> [AgeCalc](./src/main/kotlin/com/silvergravel/basic/AgeCalc.kt)
+
+---
+
+> 23.题目：给一个不多于5位的正整数，要求：一、求它是几位数，二、逆序打印出各位数字<br/>
+> 题解：可以使用字符串判断长度然后逆序打印字符<br/>
+> [DigitJudge](./src/main/kotlin/com/silvergravel/basic/DigitJudge.kt)
+
+---
+
+> 24.题目：一个5位数，判断它是不是回文数。即12321是回文数，
+> 个位与万位相同，十位和千位相同<br/>
+> 题解：使用字符串翻转判断是否一致<br/>
+> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/PerfectNumber.kt)
