@@ -206,23 +206,29 @@
 ---
 
 > 30.题目：输入数组，最大的与第一个元素交换，最小的与最后一个元素交换，输出数组<br/>
-> 题解：<br/>
+> 题解：找到最大元素最小元素的下标，然后切换<br/>
+> [MaxMinElementChange](./src/main/kotlin/com/silvergravel/basic/MaxMinElementChange.kt)
 
 ---
 
 > 31.题目：有n个整数，使其前面各数顺序向后移m个位置，最后m个数变成最前面的m个数<br/>
+> 题解：数组、集合等方法可以使用，方案可以有：1.空间换时间；2.原有的数据结构进行操作<br/>
+> [ElementMove](./src/main/kotlin/com/silvergravel/basic/ElementMove.kt)
 
 ---
 
-> 32.题目：有n个人围成一圈，顺序排号。
-> 从第一个人开始报数（从1到3报数），
-> 凡报到3的人退出圈子，问最后留下的是原来第几号的那位<br/>
-
----
-
-> 33.题目：编写一个函数，
+> 32.题目：编写一个函数，
 > 输入n为偶数时，调用函数求1/2+1/4+...+1/n,
 > 当输入n为奇数时，调用函数1/1+1/3+...+1/n<br/>
+> 题解：设置for循环起始参数即可 2-num%2<br/>
+> [OddEvenMethod](./src/main/kotlin/com/silvergravel/basic/OddEvenMethod.kt)
+
+---
+
+> 33.题目：有n个人围成一圈，顺序排号。
+> 从第一个人开始报数（从1到3报数），
+> 凡报到3的人退出圈子，问最后留下的是原来第几号的那位<br/>
+>
 
 ---
 
