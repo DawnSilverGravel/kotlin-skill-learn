@@ -16,12 +16,26 @@ object ArrayUtil {
     }
 
     fun generateArrayNumber(number: Int): Array<Int?> {
+        if (number <= 0) {
+            throw IllegalArgumentException("非法参数")
+        }
         val sourceArray = arrayOfNulls<Int>(number).apply {
             for (i in 0 until number) {
                 this[i] = current.nextInt(20, 300)
             }
         }
         return sourceArray
+    }
+
+    fun generateArrayNatureSort(number: Int): Array<Int?> {
+        if (number <= 0) {
+            throw IllegalArgumentException("非法参数")
+        }
+        return arrayOfNulls<Int>(number).apply {
+            for (i in 0 until number) {
+                this[i] = i+1
+            }
+        }
     }
 
 }
