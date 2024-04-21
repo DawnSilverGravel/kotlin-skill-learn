@@ -243,14 +243,21 @@
 ---
 
 > 35.题目：求0—7所能组成的奇数个数<br/>
+题解： 1,3,5,7为尾数的则为奇数，<br/>
+> [OddCounter](./src/main/kotlin/com/silvergravel/basic/OddCounter.kt)
 
 ---
 
 > 36.题目：一个偶数总能表示为两个素数之和<br/>
+> 题解：输入偶数，判断两个加数是不是都为素数，2不可以
+> [EvenPrimeAddend](./src/main/kotlin/com/silvergravel/basic/EvenPrimeAddend.kt)
+
 
 ---
 
 > 37.题目：读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的`＊`<br/>
+> 题解：使用String#repeat方法<br/>
+> [AsteriskPrint](./src/main/kotlin/com/silvergravel/basic/AsteriskPrint.kt)
 
 ---
 

@@ -20,7 +20,7 @@ class PrimeNumber {
                 var flag = true
                 for (i in sqrt downTo 2) {
                     if (it == 2) {
-                        continue
+                        break
                     }
                     if (it.rem(i) == 0) {
                         flag = false
@@ -32,24 +32,37 @@ class PrimeNumber {
         }
     }
 
+    fun isPrime(number: Int): Boolean {
+        if (number == 2) {
+            return true
+        }
+        val sqrt = sqrt(number.toDouble()).toInt()
+        for (i in sqrt downTo 2) {
+            if (number.rem(i) == 0) {
+                return false
+            }
+        }
+        return true
+    }
 
     fun filterPrimeNumberRun(left: Int, right: Int): List<Int> {
         val list = checkAndGenerateList(left, right)
         return list.filter {
             // run 写法
             it.run {
-                val sqrt = sqrt(this.toDouble()).toInt()
-                var flag = true
-                for (i in sqrt downTo 2) {
-                    if (this == 2) {
-                        continue
-                    }
-                    if (this.rem(i) == 0) {
-                        flag = false
-                        break
-                    }
-                }
-                flag
+                isPrime(this)
+//                val sqrt = sqrt(this.toDouble()).toInt()
+//                var flag = true
+//                for (i in sqrt downTo 2) {
+//                    if (this == 2) {
+//                        break
+//                    }
+//                    if (this.rem(i) == 0) {
+//                        flag = false
+//                        break
+//                    }
+//                }
+//                flag
             }
         }
     }
