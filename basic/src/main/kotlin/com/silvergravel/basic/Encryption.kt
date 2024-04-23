@@ -13,26 +13,50 @@ class Encryption {
 
     fun encrypt(number: Long): Long {
         val builder = number.toString()
-        if (number < 100 || builder.length.rem(4)!=0) {
+        if (number < 1000 || builder.length.rem(4) != 0) {
             throw IllegalArgumentException("只支持4位数的倍数加密")
         }
 
         val apply = arrayOfNulls<Long>(builder.length).apply {
             for (index in builder.indices) {
                 this[index] = builder[index].code.minus('0'.code.toLong()).plus(5).rem(10)
-                if (index != 0 && index.plus(1).rem(4) == 0) {
-                    this[index - 3] = this[index].also {
-                        this[index] = this[index - 3]
-                    }
-                    this[index - 2] = this[index - 1].also {
-                        this[index - 1] = this[index - 2]
-                    }
-                }
+                changeValue(this, index)
             }
         }
 
 
         return apply.joinToString("").toLong()
+    }
+
+    fun decrypt(number: Long): Long {
+        val builder = number.toString()
+        if (number < 1000 || builder.length.rem(4) != 0) {
+            throw IllegalArgumentException("只支持4位数的倍数解密")
+        }
+        val apply = arrayOfNulls<Long>(builder.length).apply {
+            for (index in builder.indices) {
+                this[index] = builder[index].code.minus('0'.code.toLong()).let {
+                    if (it > 4) {
+                        it.minus(5)
+                    } else {
+                        it.plus(10).minus(5)
+                    }
+                }
+                changeValue(this, index)
+            }
+        }
+        return apply.joinToString("").toLong()
+    }
+
+    private fun changeValue(array: Array<Long?>, index: Int) {
+        if (index != 0 && index.plus(1).rem(4) == 0) {
+            array[index - 3] = array[index].also {
+                array[index] = array[index - 3]
+            }
+            array[index - 2] = array[index - 1].also {
+                array[index - 1] = array[index - 2]
+            }
+        }
     }
 
 
@@ -42,5 +66,8 @@ fun main() {
     val scanner = Scanner(System.`in`)
     print("输入4位数字：")
     val number = scanner.nextLong()
-    println("解密后的数字为：${Encryption().encrypt(number)}")
+    val encryption = Encryption()
+    val encrypt = encryption.encrypt(number)
+    println("加密后的数字为：${encrypt}")
+    println("解密后的数字为：${encryption.decrypt(encrypt)}")
 }

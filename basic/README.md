@@ -243,7 +243,7 @@
 ---
 
 > 35.题目：求0—7所能组成的奇数个数<br/>
-题解： 1,3,5,7为尾数的则为奇数，<br/>
+> 题解： 1,3,5,7为尾数的则为奇数，<br/>
 > [OddCounter](./src/main/kotlin/com/silvergravel/basic/OddCounter.kt)
 
 ---
@@ -264,7 +264,7 @@
 > 38.题目：某个公司采用公用电话传递数据，数据是四位的整数，在传递过程中是加密的，
 > 加密规则如下：每位数字都加上5,然后用和除以10的余数代替该数字，
 > 再将第一位和第四位交换，第二位和第三位交换<br/>
-> 题解：数字转数组然后进行加密处理,该题目无法解密。。。<br/>
+> 题解：数字转数组然后进行加密处理<br/>
 > [Encryption](./src/main/kotlin/com/silvergravel/basic/Encryption.kt)
 
 --- 
@@ -284,15 +284,22 @@
 > 题解：使用if语句逐步区分区间即可<br/>
 > [ProfitCommission](./src/main/kotlin/com/silvergravel/basic/ProfitCommission.kt)
 
-
 ---
 
 > 41.题目：要求输出国际象棋棋盘。<br/>
+> 题解：双层for循环输出8*8矩阵图形<br/>
+> [Chess](./src/main/kotlin/com/silvergravel/basic/Chess.kt)
 
+---
 
 > 42.判断三角形<br/>
- 
+> 题解：任意两条边大于第三边<br/>
+> [TriangleJudge](./src/main/kotlin/com/silvergravel/basic/TriangleJudge.kt)
+
+---
 
 > 43.题目：有五个学生，每个学生有3门课的成绩，从键盘输入以上数据（
 > 包括学生号，姓名，三门课成绩），计算出平均成绩，
-> 将原有的数据和计算出的平均分数存放在磁盘文件"stud"中 
+> 将原有的数据和计算出的平均分数存放在磁盘文件"stud"中<br/>
+> 题解：使用Java的IO流<br/>
+> [StudentGrade](./src/main/kotlin/com/silvergravel/basic/StudentGrade.kt)
