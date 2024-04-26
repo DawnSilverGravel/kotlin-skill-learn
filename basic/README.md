@@ -11,26 +11,26 @@
 > <br/>
 > 题解：使用递归函数,从最先的第一个月和第二个月开始相加
 > <br/>
-> [RabbitReproduction](./src/main/kotlin/com/silvergravel/basic/RabbitReproduction.kt)
+> [RabbitReproduction](./src/main/kotlin/com/silvergravel/basic/practice/RabbitReproduction.kt)
 
 ---
 
 > 2.题目：输出输出斐波那契数列<br/>
 > 题解：生成一个二维数组，下三角为斐波那契数列数据，缺点：浪费空间<br/>
-> [FibonacciSequence](./src/main/kotlin/com/silvergravel/basic/FibonacciSequence.kt)
+> [FibonacciSequence](./src/main/kotlin/com/silvergravel/basic/practice/FibonacciSequence.kt)
 
 --- 
 
 > 3.题目：判断101-200之间有多少个素数，并输出所有素数<br/>
 > 题解：先平方该数，该数的平方根取下整到 2，如果能被它们其中一个整除，则为合数，否则为素数<br/>
-> [PrimeNumber](./src/main/kotlin/com/silvergravel/basic/PrimeNumber.kt)
+> [PrimeNumber](./src/main/kotlin/com/silvergravel/basic/practice/PrimeNumber.kt)
 
 ---
 
 > 4.题目：打印出所有的"水仙花数"，所谓"水仙花数"是指一个三位数，其各位数字立方和等于该数本身
 > 如：153 = 1<sup>3</sup>+5<sup>3</sup>+3<sup>3</sup><br/>
 > 题解：将数字拆分为3个数，然后分别进行3次方<br>
-> [NarcissusFlower](./src/main/kotlin/com/silvergravel/basic/NarcissusFlower.kt)
+> [NarcissusFlower](./src/main/kotlin/com/silvergravel/basic/practice/NarcissusFlower.kt)
 
 ---
 
@@ -39,78 +39,77 @@
 > &emsp;&emsp;&emsp;第二步：如果n!=k，但n能被k整除，
 > 则应打印出k的值，并用n除以k的商,作为新的正整数n,重复执行第一步<br/>
 > &emsp;&emsp;&emsp;第三步：如果n不能被k整除，则用k+1作为k的值,重复执行第一步<br>
-> [PrimeNumberFactor](./src/main/kotlin/com/silvergravel/basic/PrimeNumberFactor.kt)
+> [PrimeNumberFactor](./src/main/kotlin/com/silvergravel/basic/practice/PrimeNumberFactor.kt)
 
 ---
 
 > 6.题目：利用条件运算符的嵌套来完成分数等级展示：学习成绩>=90分的同学用A表示，
 > 60-89分之间的用B表示，60分以下的用C表示<br>
 > 题解：使用when关键字解题<br/>
-> [GradeShow](./src/main/kotlin/com/silvergravel/basic/GradeShow.kt)
+> [GradeShow](./src/main/kotlin/com/silvergravel/basic/practice/GradeShow.kt)
 
 ---
 
 > 7.题目：输入两个正整数m和n，求其最大公约数和最小公倍数<br/>
->
-题解：利用辗除法 [欧几里得算法](https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/1647675)<br/>
-> [CommonDivisorMultiple](./src/main/kotlin/com/silvergravel/basic/CommonDivisorMultiple.kt)
+> 题解：利用辗除法 [欧几里得算法](https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/1647675)<br/>
+> [CommonDivisorMultiple](./src/main/kotlin/com/silvergravel/basic/practice/CommonDivisorMultiple.kt)
 
 ---
 
 > 8.输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数<br/>
 > 题解：使用正则表达式<br/>
-> [StatisticalCharacters](./src/main/kotlin/com/silvergravel/basic/StatisticalCharacters.kt)
+> [StatisticalCharacters](./src/main/kotlin/com/silvergravel/basic/practice/StatisticalCharacters.kt)
 
 ---
 
 > 9.题目：求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。
 > 例如2+22+222+2222+22222(此时共有5个数相加)，几个数相加有键盘控制。<br/>
 > 题解：循环计算每一项的值<br/>
-> [SameNumberItem](./src/main/kotlin/com/silvergravel/basic/SameNumberItem.kt)
+> [SameNumberItem](./src/main/kotlin/com/silvergravel/basic/practice/SameNumberItem.kt)
 
 ---
 
 > 10.题目：一个数如果恰好等于它的因子之和，这个数就称为"完数"。
 > 例如6=1＋2＋3.编程找出1000以内的所有完数<br/>
 > 题解：平方这个数得到平方根，然后从2循环至平方根 得到两个因子，最后汇总相加<br/>
-> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/PerfectNumber.kt)
+> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/practice/PerfectNumber.kt)
 
 ---
 
 > 11.题目：一个球从一定高度自由落下，每次落地后反跳回原高度的一半；
 > 再落下，求它在 第N次落地时，共经过多少米？第N次反弹多高<br/>
 > 题解：每一次落地弹起都是该高度的3/2<br/>
-> [BallFalling](./src/main/kotlin/com/silvergravel/basic/BallFalling.kt)
+> [BallFalling](./src/main/kotlin/com/silvergravel/basic/practice/BallFalling.kt)
 
 ---
 
 > 12.题目：有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 > 题解：三层循环，相同的数字跳过当前循环<br>
-> [DifferentNotRepeatNumber](./src/main/kotlin/com/silvergravel/basic/DifferentNotRepeatNumber.kt)
+> [DifferentNotRepeatNumber](./src/main/kotlin/com/silvergravel/basic/practice/DifferentNotRepeatNumber.kt)
 
 ---
 
 > 13.题目：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？</br>
 > 题解：指定上界，在上界内判断这个数<br/>
-> [PerfectSquare](./src/main/kotlin/com/silvergravel/basic/PerfectSquare.kt)
+> [PerfectSquare](./src/main/kotlin/com/silvergravel/basic/practice/PerfectSquare.kt)
 
 ---
 
 > 14.题目：输入某年某月某日，判断这一天是这一年的第几天？<br/>
 > 题解：处理闰年多一天的情况，创建一个每月的天数数组<br/>
-> [DetermineNumberDay](./src/main/kotlin/com/silvergravel/basic/DetermineNumberDay.kt)
+> [DetermineNumberDay](./src/main/kotlin/com/silvergravel/basic/practice/DetermineNumberDay.kt)
 
 ---
 
 > 15.题目：输入三个整数x,y,z，请把这三个数由小到大输出<br/>
 > 题解：使用also两两交换变量<br/>
-> [ThreeNumberSort](./src/main/kotlin/com/silvergravel/basic/ThreeNumberSort.kt)
+> [ThreeNumberSort](./src/main/kotlin/com/silvergravel/basic/practice/ThreeNumberSort.kt)
 
 ---
 
 > 16.题目：输出乘法口诀<br/>
 > 题解：使用双层for循环<br/>
-> [MultiplicationMnemonic](./src/main/kotlin/com/silvergravel/basic/MultiplicationMnemonic.kt)
+> [MultiplicationMnemonic](./src/main/kotlin/com/silvergravel/basic/practice/MultiplicationMnemonic.kt)
 
 ---
 
@@ -118,7 +117,7 @@
 > 第二天早上又将剩下的桃子吃掉一半，又多吃了一个。以后每天早上都吃了前一天剩下的一半零一个。
 > 到第10天早上想再吃时，见只剩下一个桃子了。求第一天共摘了多少。<br/>
 > 题解：使用逆向思维，从第10天开始<br/>
-> [MonkeyEatPeach](./src/main/kotlin/com/silvergravel/basic/MonkeyEatPeach.kt)
+> [MonkeyEatPeach](./src/main/kotlin/com/silvergravel/basic/practice/MonkeyEatPeach.kt)
 
 ---
 
@@ -131,25 +130,25 @@
 `***`<br/>
 `*`<br/>
 > 题解：上半部分使用顺序for循环，下半部分使用逆循环<br/>
-> [Diamond](./src/main/kotlin/com/silvergravel/basic/Diamond.kt)
+> [Diamond](./src/main/kotlin/com/silvergravel/basic/practice/Diamond.kt)
  
 ---
 
 > 19.题目：有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和<br/>
 > 题解：下一个分子为上个分子与分母之和，下个分母为上个分子的值<br/>
-> [FractionSum](./src/main/kotlin/com/silvergravel/basic/FractionSum.kt)
+> [FractionSum](./src/main/kotlin/com/silvergravel/basic/practice/FractionSum.kt)
 
 ---
 
 > 20.题目：求1+2!+3!+...+20!的和<br/>
 > 题解：分别求出每个数的阶乘再求和<br/>
-[FactorialSum](./src/main/kotlin/com/silvergravel/basic/FactorialSum.kt)
+[FactorialSum](./src/main/kotlin/com/silvergravel/basic/practice/FactorialSum.kt)
 
 ---
 
 > 21.题目：利用递归方法求5!<br/>
 > 题解：构建递归方法求和<br/>
-[FactorialRecursive](./src/main/kotlin/com/silvergravel/basic/FactorialRecursive.kt)
+[FactorialRecursive](./src/main/kotlin/com/silvergravel/basic/practice/FactorialRecursive.kt)
  
 ---
 
@@ -158,62 +157,62 @@
 > 问第2个人，说比第一个人大两岁。最后问第一个人，他说是10岁。
 > 请问第五个人多大<br/>
 > 题解：使用递归法或直接乘法<br/>
-> [AgeCalc](./src/main/kotlin/com/silvergravel/basic/AgeCalc.kt)
+> [AgeCalc](./src/main/kotlin/com/silvergravel/basic/practice/AgeCalc.kt)
 
 ---
 
 > 23.题目：给一个不多于5位的正整数，要求：一、求它是几位数，二、逆序打印出各位数字<br/>
 > 题解：可以使用字符串判断长度然后逆序打印字符<br/>
-> [DigitJudge](./src/main/kotlin/com/silvergravel/basic/DigitJudge.kt)
+> [DigitJudge](./src/main/kotlin/com/silvergravel/basic/practice/DigitJudge.kt)
 
 ---
 
 > 24.题目：一个5位数，判断它是不是回文数。即12321是回文数，
 > 个位与万位相同，十位和千位相同<br/>
 > 题解：使用字符串翻转判断是否一致<br/>
-> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/PerfectNumber.kt)
+> [PerfectNumber](./src/main/kotlin/com/silvergravel/basic/practice/PerfectNumber.kt)
 
 --- 
 
 > 25.题目：请输入星期几的第一个字母来判断一下是星期几，如果第一个字母一样，则继续 判断第二个字母<br/>
 > 题解：直接使用字符串来匹配<br/>
-> [WeekJudge](./src/main/kotlin/com/silvergravel/basic/WeekJudge.kt)
+> [WeekJudge](./src/main/kotlin/com/silvergravel/basic/practice/WeekJudge.kt)
 
 ---
 
 > 26.题目：对10个数进行排序<br/>
 > 题解：快排、冒泡、选择等算法均可<br/>
-> [NumberSort](./src/main/kotlin/com/silvergravel/basic/NumberSort.kt)
+> [NumberSort](./src/main/kotlin/com/silvergravel/basic/practice/NumberSort.kt)
 
 ---
 
 > 27.题目：求一个3*3矩阵对角线元素之和<br/>
 > 题解：构建一个二维数组，取出array[i][i]和array[i][n-i]<br/>
-> [MatrixDiagonal](./src/main/kotlin/com/silvergravel/basic/MatrixDiagonal.kt)
+> [MatrixDiagonal](./src/main/kotlin/com/silvergravel/basic/practice/MatrixDiagonal.kt)
 
 ---
 
 > 28.题目：有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中<br/>
 > 题解：首先判断是否与边界比较，再从中间比较<br/>
-> [InsertNumberSort](./src/main/kotlin/com/silvergravel/basic/InsertNumberSort.kt)
+> [InsertNumberSort](./src/main/kotlin/com/silvergravel/basic/practice/InsertNumberSort.kt)
 
 ---
 
 > 29.取一个整数a从右端开始的4～7位<br/>
 > 题解：使用字符串截出4-7位的数字<br/>
-> [RangeNumber](./src/main/kotlin/com/silvergravel/basic/RangeNumber.kt)
+> [RangeNumber](./src/main/kotlin/com/silvergravel/basic/practice/RangeNumber.kt)
 
 ---
 
 > 30.题目：输入数组，最大的与第一个元素交换，最小的与最后一个元素交换，输出数组<br/>
 > 题解：找到最大元素最小元素的下标，然后切换<br/>
-> [MaxMinElementChange](./src/main/kotlin/com/silvergravel/basic/MaxMinElementChange.kt)
+> [MaxMinElementChange](./src/main/kotlin/com/silvergravel/basic/practice/MaxMinElementChange.kt)
 
 ---
 
 > 31.题目：有n个整数，使其前面各数顺序向后移m个位置，最后m个数变成最前面的m个数<br/>
 > 题解：数组、集合等方法可以使用，方案可以有：1.空间换时间；2.原有的数据结构进行操作<br/>
-> [ElementMove](./src/main/kotlin/com/silvergravel/basic/ElementMove.kt)
+> [ElementMove](./src/main/kotlin/com/silvergravel/basic/practice/ElementMove.kt)
 
 ---
 
@@ -221,7 +220,7 @@
 > 输入n为偶数时，调用函数求1/2+1/4+...+1/n,
 > 当输入n为奇数时，调用函数1/1+1/3+...+1/n<br/>
 > 题解：设置for循环起始参数即可 2-num%2<br/>
-> [OddEvenMethod](./src/main/kotlin/com/silvergravel/basic/OddEvenMethod.kt)
+> [OddEvenMethod](./src/main/kotlin/com/silvergravel/basic/practice/OddEvenMethod.kt)
 
 ---
 
@@ -229,7 +228,7 @@
 > 从第一个人开始报数（从1到3报数），
 > 凡报到3的人退出圈子，问最后留下的是原来第几号的那位<br/>
 > 题解：一个顺序数组，退出圈子的设置为null，总数为1退出循环<br/>
-> [CountOut](./src/main/kotlin/com/silvergravel/basic/CountOut.kt)
+> [CountOut](./src/main/kotlin/com/silvergravel/basic/practice/CountOut.kt)
 
 ---
 
@@ -238,26 +237,26 @@
 > 第二只猴子把剩下的桃子又平均分成五份，又多了一个，它同样把多的一个扔入海中，
 > 拿走了一份，第三、第四、第五只猴子都是这样做的，问海滩上原来最少有多少个桃子<br/>
 > 题解：五只猴子，取完之后剩下4n份，(4n+n+1)*5 = 第四只猴子的4n份<br/>
-> [MonkeyDividingPeach](./src/main/kotlin/com/silvergravel/basic/MonkeyDividingPeach.kt)
+> [MonkeyDividingPeach](./src/main/kotlin/com/silvergravel/basic/practice/MonkeyDividingPeach.kt)
 
 ---
 
 > 35.题目：求0—7所能组成的奇数个数<br/>
 > 题解： 1,3,5,7为尾数的则为奇数，<br/>
-> [OddCounter](./src/main/kotlin/com/silvergravel/basic/OddCounter.kt)
+> [OddCounter](./src/main/kotlin/com/silvergravel/basic/practice/OddCounter.kt)
 
 ---
 
 > 36.题目：一个偶数总能表示为两个素数之和<br/>
 > 题解：输入偶数，判断两个加数是不是都为素数，2不可以
-> [EvenPrimeAddend](./src/main/kotlin/com/silvergravel/basic/EvenPrimeAddend.kt)
+> [EvenPrimeAddend](./src/main/kotlin/com/silvergravel/basic/practice/EvenPrimeAddend.kt)
 
 
 ---
 
 > 37.题目：读取7个数（1—50）的整数值，每读取一个值，程序打印出该值个数的`＊`<br/>
 > 题解：使用String#repeat方法<br/>
-> [AsteriskPrint](./src/main/kotlin/com/silvergravel/basic/AsteriskPrint.kt)
+> [AsteriskPrint](./src/main/kotlin/com/silvergravel/basic/practice/AsteriskPrint.kt)
 
 ---
 
@@ -265,13 +264,13 @@
 > 加密规则如下：每位数字都加上5,然后用和除以10的余数代替该数字，
 > 再将第一位和第四位交换，第二位和第三位交换<br/>
 > 题解：数字转数组然后进行加密处理<br/>
-> [Encryption](./src/main/kotlin/com/silvergravel/basic/Encryption.kt)
+> [Encryption](./src/main/kotlin/com/silvergravel/basic/practice/Encryption.kt)
 
 --- 
 
 > 39.题目：计算字符串中子串出现的次数<br/>
 > 题解：得看个人理解，这里理解`Dawn Silver Gravel`为三个子串<br/>
-> [Substring](./src/main/kotlin/com/silvergravel/basic/SubstringCount.kt)
+> [Substring](./src/main/kotlin/com/silvergravel/basic/practice/SubstringCount.kt)
 
 ---
 
@@ -282,19 +281,19 @@
 > 60万到100万之间时，高于60万元的部分，可提成1.5%，高于100万元时，
 > 超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数<br/>
 > 题解：使用if语句逐步区分区间即可<br/>
-> [ProfitCommission](./src/main/kotlin/com/silvergravel/basic/ProfitCommission.kt)
+> [ProfitCommission](./src/main/kotlin/com/silvergravel/basic/practice/ProfitCommission.kt)
 
 ---
 
 > 41.题目：要求输出国际象棋棋盘。<br/>
 > 题解：双层for循环输出8*8矩阵图形<br/>
-> [Chess](./src/main/kotlin/com/silvergravel/basic/Chess.kt)
+> [Chess](./src/main/kotlin/com/silvergravel/basic/practice/Chess.kt)
 
 ---
 
 > 42.判断三角形<br/>
 > 题解：任意两条边大于第三边<br/>
-> [TriangleJudge](./src/main/kotlin/com/silvergravel/basic/TriangleJudge.kt)
+> [TriangleJudge](./src/main/kotlin/com/silvergravel/basic/practice/TriangleJudge.kt)
 
 ---
 
@@ -302,4 +301,4 @@
 > 包括学生号，姓名，三门课成绩），计算出平均成绩，
 > 将原有的数据和计算出的平均分数存放在磁盘文件"stud"中<br/>
 > 题解：使用Java的IO流<br/>
-> [StudentGrade](./src/main/kotlin/com/silvergravel/basic/StudentGrade.kt)
+> [StudentGrade](./src/main/kotlin/com/silvergravel/basic/practice/StudentGrade.kt)
